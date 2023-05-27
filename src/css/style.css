@@ -1,0 +1,13 @@
+:root{
+    --primaria: #0EF6CC;
+    --secundaria: #F4FEFD;
+    --terciaria: #1b2223;
+    --quarta: #3A4F50;
+}
+
+body {
+    background-color: var(--terciaria);
+    color: white;
+    font-family: 'Oswald', sans-serif
+}
+
