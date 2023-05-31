@@ -62,9 +62,23 @@ h1 {
     width: 50px;
 }
 
+
+#container-projetos {
+    border-radius: 30px;
+    background-color: var(--secundaria);
+    width: 200px;
+    height: 300px;
+}
+
+.link-img {
+    height: 25px;
+    width: 25px;
+}
+
 .img-habilidades {
     height: 40px;
     width: 40px;
 }
+
 
 
