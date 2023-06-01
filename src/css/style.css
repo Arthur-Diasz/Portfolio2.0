@@ -1,25 +1,26 @@
 :root{
-    --primaria: #DCF5EE;
-    --secundaria: #E1896E;
-    --terciaria: #2E5153;
-    --quarta: #F6F6F6;
+    --branco: #9370DB;
+    --azul-escuro: #1A237E;
+    --azul-claro: #2196F3;
+    --cinza-claro: #E0E0E0;
+    --cinza: #333333;
 
 }
 
 body {
-    background-color: var(--terciaria);
-    color: white;
     font-family: 'Oswald', sans-serif;
     align-items: center;
-    
 }
+
 
 header {
     display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-between;
+     padding: 20px;
     height: 70px;
+    color: var(--branco);
 }
 
 .navbar {
@@ -46,14 +47,26 @@ header span {
 }
 
 .content {
-    color:var(--primaria);
     font-size: 70px;
     font-family: Bebas Neue;
+    height: 100vh;
+    width: 100vw;
 }
+
+.content::before {
+    content: "";
+    position: absolute;
+    height: 800px;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: -1;
+  }
 
 h1 {
     text-align: center;
-    color: var(--secundaria);
+    color: var(--azul-escuro);
 }
 
 .icon {
@@ -63,11 +76,33 @@ h1 {
 }
 
 
-#container-projetos {
+
+
+.projetos {
+    background-color: aqua;
+}
+
+#container-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    
+
+}
+
+.projeto-card {
     border-radius: 30px;
-    background-color: var(--secundaria);
+    background-color: var(--cinza-claro);
     width: 200px;
     height: 300px;
+    padding: 20px;
+    align-items: center;
+}
+
+.projeto-foto {
+    max-width: 100%;
+    height: auto;
+
 }
 
 .link-img {
