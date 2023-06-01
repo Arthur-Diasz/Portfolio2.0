@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  /* font-family: 'Bebas Neue', sans-serif;
+  */
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@700&display=swap');
+  /* font-family: 'Oswald', sans-serif;
+     font-family: 'Roboto', sans-serif; 
+  */
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Staatliches&display=swap');
+    /* font-family: 'Bruno Ace SC', cursive;
+       font-family: 'Staatliches', cursive;
+    */
+
 :root{
     --branco: #9370DB;
-    --azul-escuro: #1A237E;
-    --azul-claro: #2196F3;
-    --cinza-claro: #E0E0E0;
+    --prata: #C0C0C0;
+    --verde: #006400;
     --cinza: #333333;
 
 }
@@ -20,7 +32,8 @@ header {
     justify-content: space-between;
      padding: 20px;
     height: 70px;
-    color: var(--branco);
+    color: var(--prata);
+    font-family: 'Roboto', sans-serif; 
 }
 
 .navbar {
@@ -46,23 +59,39 @@ header span {
     width: 25px;
 }
 
-.content {
-    font-size: 70px;
-    font-family: Bebas Neue;
-    height: 100vh;
-    width: 100vw;
+#inicio {
+   font-size: 30px;
+   margin-left: 70px;
+   text-align: center;
 }
 
-.content::before {
+.container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#inicio::before {
     content: "";
     position: absolute;
-    height: 800px;
+    height: 850px;
     width: 100vw;
     top: 0;
     left: 0;
-    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
+    background: radial-gradient(ellipse at center, rgb(147, 112, 219) 0%, rgba(0, 0, 0, 0.7) 100%);
     z-index: -1;
   }
+
+
+.front {
+    font-size: 200px;
+    font-family:'Oswald', sans-serif;;
+    font-weight: bolder;
+    height: 100vh;
+    width: 100vw;
+    font-stretch: expanded;
+    display: inline-block;
+    
+}
 
 h1 {
     text-align: center;
@@ -78,25 +107,26 @@ h1 {
 
 
 
-.projetos {
-    background-color: aqua;
+#container-projetos {
+    margin-top: 120px;
 }
 
 #container-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
-    
 
 }
 
 .projeto-card {
     border-radius: 30px;
-    background-color: var(--cinza-claro);
+    background-color: var(--verde);
     width: 200px;
     height: 300px;
-    padding: 20px;
-    align-items: center;
+    padding: 50px;
+    margin-bottom: 70px;
+    margin-left: 60px;
+    
 }
 
 .projeto-foto {
@@ -104,6 +134,13 @@ h1 {
     height: auto;
 
 }
+
+#certificados {
+    height: 350px;
+    width: 100vw;
+}
+
+
 
 .link-img {
     height: 25px;
@@ -113,6 +150,12 @@ h1 {
 .img-habilidades {
     height: 40px;
     width: 40px;
+}
+
+#voltar img {
+    height: 40px;
+    width: 40px;
+    align-self: flex-end;
 }
 
 

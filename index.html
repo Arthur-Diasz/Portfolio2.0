@@ -17,53 +17,56 @@
                 
                 <div class="nav-item">
                     <img class="nav-img" src="src/images/casa.svg" alt="home">
-                    <a class="navlink">Início</a>
+                    <a class="navlink" href="#inicio">Início</a>
                 </div>
                 
                 <div class="nav-item">
                     <img class="nav-img" src="src/images/" alt="">
-                    <a class="navlink">Projetos</a>
+                    <a class="navlink" href="#projetos">Projetos</a>
                 </div>
                 
                 <div class="nav-item">
                     <img class="nav-img" src="src/images/chapeu-de-graduacao.svg" alt="chapeu">
-                    <a class="navlink">Certificações</a>
+                    <a class="navlink" href="#certificados">Certificações</a>
                 </div>
                 
                 <div class="nav-item">
                     <img class="nav-img" src="src/images/" alt="">
-                    <a class="navlink">Habilidades</a>
+                    <a class="navlink" href="#habilidades">Habilidades</a>
                 </div>
                 
                 <div class="nav-item">
                     <img class="nav-img" src="src/images/" alt="">
-                    <a class="navlink">Contato</a>
+                    <a class="navlink" href="#contato">Contato</a>
                 </div>
 
             </div>
         </header>
         <!-- PARTE PRINCCIPAL-->
-        <div class="content">
+        <section id="inicio">
             <span> Oi Eu sou o Arthur</span>
             <div class="container"> 
-                <a href="https://www.linkedin.com/in/arthur-dias-262a75212/" target="_blank">  
-                    <img src="src/images/linkedin.svg" alt="linkedin" class="icon">
-                </a>
+                <span class="front">FRONT-END
+                    <a href="https://www.linkedin.com/in/arthur-dias-262a75212/" target="_blank">  
+                        <img src="src/images/linkedin.svg" alt="linkedin" class="icon">
+                    </a>
 
-                <a href="https://github.com/Arthur-Diasz" target="_blank" >
-                    <img src="src/images/github.svg" alt="github" class="icon">
-                </a>
+                    <a href="https://github.com/Arthur-Diasz" target="_blank" >
+                        <img src="src/images/github.svg" alt="github" class="icon">
+                    </a>
 
-                <a href="https://www.instagram.com/arthur.webdev/" target="_blank">
-                    <img src="src/images/instagram.svg" alt="instagram" class="icon">
-                </a>
+                    <a href="https://www.instagram.com/arthur.webdev/" target="_blank">
+                        <img src="src/images/instagram.svg" alt="instagram" class="icon">
+                    </a>
+                </span>
             </div>
-            <span>Front-End</span>
-            <span>Developer</span>
+            
+            <span class="front">DEVELOPER</span>
             <p>Tenho 17 anos sou desenvolvedor web com um ano de experiencia na área de criação de sites </p>        
-        </div>
+            </div>
+        </section>
                 <!-- PRJETOS -->
-        <section id="container-projetos">   
+        <section id="projetos">
             <h1> PROJETOS </h1>
             <div id="container-cards">
                 <div class="projeto-card">
@@ -80,7 +83,17 @@
 
                 </div>
                 <div class="projeto-card"> 
-                    AA
+                    <img class="projeto-foto" src="src/images/pong.jpg" alt="pokedex">
+                    <h1> Jogo Pong </h1>
+                    <div class="links">
+                        <a href="https://github.com/Arthur-Diasz/PongGame-p5.js" target="_blank">
+                        <img class="link-img" src="src/images/github.svg" alt="github">
+                        </a>
+                    </div>
+                    <p id="informacao"> Atividade para praticar JavaScript, usando a biblioteca P5.JS </p>
+                    <h3> Tecnologias usadas </h3>
+                    <p> JavaScript </p>
+
                 </div>
                 <div class="projeto-card"> </div>
                 <div class="projeto-card"> </div>
@@ -90,11 +103,12 @@
             </div>
         </section>
                 <!-- CERTIFICADOS -->
-            <div class="certificados">
+            <section id="certificados">
                 <h1 class="titulo"> Meu certificados </h1>
-            </div>
+
+            </section>
                 <!-- HABILIDADES -->
-        <div class="habilidades">
+        <section id="habilidades">
             <h1> Habilidades</h1>
             <div id="JavaScript">
                 <img class="img-habilidades" src="src/images/javascript (1).svg" alt="js">
@@ -125,11 +139,14 @@
                 <img class="img-habilidades" src="src/images/git.svg" alt="git">
                 <p> GIT </p>
             </div>
-        </div>
+        </section>
             <!-- CONTATO -->
-        <div class="contato">
-            
-        </div>
+        <section class="contato">
+            <h1>CONTATO</h1>
+        </section>
 
+        <a id="voltar" href="#inicio">
+        <img src="src/images/seta-para-cima.png" alt="">
+        </a>
     </body>
 </html>
