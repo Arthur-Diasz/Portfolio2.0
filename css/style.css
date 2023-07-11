@@ -21,8 +21,17 @@ body {
     background-color: var(--bg1);
 }
 
+main {
+    padding-left: 16.87%;
+    padding-right: 16.87%;
+}
+
 a {
     text-decoration: none;
+}
+
+section {
+    padding-top: 80px;
 }
 
 a:hover {
@@ -56,7 +65,10 @@ nav {
 }
 
 #btn-header {
-    margin-right: 50px;
+    background-color: black;
+    height: 37px;
+    width: 157px;
+    display:inline-block;
 }
 
 #logo {
@@ -81,6 +93,12 @@ nav {
 
 /* INICIO */
  
+#inicio {
+    height: 100vh;
+}
+
+
+
 
 /* RESPONSIVO */
 
