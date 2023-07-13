@@ -21,10 +21,10 @@ body {
     background-color: var(--bg1);
 }
 
-main {
-    padding-left: 16.87%;
-    padding-right: 16.87%;
-}
+.container {
+    width: 85%;
+    margin: 0 auto;
+      }
 
 a {
     text-decoration: none;
@@ -47,15 +47,18 @@ input:hover {
 
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
-    background: var(--bg2);
     height: 8vh;
+    width: 100%;
+    border-bottom: 2px var(--bg2) ;
 }
+
 
 .nav-list {
     list-style: none;
     display: flex;
+    margin-left: 140px;
 
 }
 
@@ -65,15 +68,20 @@ nav {
 }
 
 #btn-header {
+    color: white;
     background-color: black;
-    height: 37px;
-    width: 157px;
-    display:inline-block;
-}
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5em;
+    width: 12em;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-left: 20em;
+  }
 
-#logo {
-    margin-left: 36px;
-}
 
 
 
