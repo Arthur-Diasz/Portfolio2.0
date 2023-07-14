@@ -28,6 +28,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 section {
@@ -51,14 +52,15 @@ nav {
     align-items: center;
     height: 8vh;
     width: 100%;
-    border-bottom: 2px var(--bg2) ;
+    border-bottom: 2px var(--bg2);
+    font-family: var(--font2);
 }
 
 
 .nav-list {
     list-style: none;
     display: flex;
-    margin-left: 140px;
+    margin-left: 210px;
 
 }
 
@@ -103,6 +105,16 @@ nav {
  
 #inicio {
     height: 100vh;
+    display: flex;
+}
+
+#inicio article {
+    display: flex;
+}
+
+.texto-inicio h1 {
+    font-size: 110px;
+    flex-wrap: wrap;
 }
 
 
